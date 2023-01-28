@@ -1,4 +1,4 @@
-$colorPrimario: #1877f2 
+$colorPrimario: #1877f2
 $colorSecundario: #f5b041
 
 html
@@ -6,24 +6,22 @@ html
 *
     scrollbar-width: auto
     scrollbar-color: $colorSecundario #ffffff
-*::-webkit-scrollbar 
-    width: 16px 
-*::-webkit-scrollbar-track 
+*::-webkit-scrollbar
+    width: 16px
+*::-webkit-scrollbar-track
     background: #ffffff
-*::-webkit-scrollbar-thumb 
+*::-webkit-scrollbar-thumb
     background-color: $colorSecundario
     border-radius: 10px
     border: 3px solid #ffffff
 
+@keyframes tracking-in-expand
+    0%
+        letter-spacing: -0.5em
+        opacity: 0
 
-@keyframes tracking-in-expand 
-    0% 
-        letter-spacing: -0.5em 
-        opacity: 0 
-  
 body
     background: #fff
-
 
 .header
     z-index: 2
@@ -41,13 +39,12 @@ body
     a
         text-decoration: none
         color: #000
-        padding:30px 50px
+        padding: 30px 50px
         background: #fff
         transition: background .2s
         &:hover
-            background: $colorPrimario 
+            background: $colorPrimario
             color: #fff
-
 
 .titulo
     height: 600px
@@ -72,13 +69,13 @@ body
         right: 0
     h1
         flex-shrink: 1
-        color:$colorSecundario
+        color: $colorSecundario
         font-family: 'Noto serif', cursive
         font-size: 160px
 
 // tiene que llevar un tab despues de animation para que funcione
 .tracking-in-expand
-    animation:  tracking-in-expand .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: tracking-in-expand .7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
 
 .contenedor
     display: flex
@@ -99,13 +96,14 @@ body
             font-family: 'roboto' , sans-serif
             line-height: 33px
         h2
-            color: $colorPrimario 
+            color: $colorPrimario
             font-family: 'Bebas Neue', cursive
             font-size: 40px
             padding: 30px 0 0 0
         h4
             font-family: 'roboto' , sans-serif
 .sidebar
+    margin: auto
     width: 35%
     display: flex
     flex-flow: column wrap
@@ -135,33 +133,6 @@ body
         width: 100%
         right: 0
 
-   
-.audio
-    background: $colorPrimario 
-    width: auto
-    min-height: 180px
-    border-radius: 8px
-    padding: 25px 25px 10px
-    margin: auto
-    transition: all .3s 
-    opacity: .9
-    font-size: 16px
-    &:hover
-       background: $colorPrimario
-       opacity: 1
-    h2
-        color: #fff
-        padding-left: 10px
-        font-family: 'roboto', sans-serif
-        font-size: 2em
-        padding-bottom: 8px    
-    h3
-        padding-left: 10px
-        font-family: 'Roboto', sans-serif
-        color: #fff
-        font-size: 1em
-    audio
-        margin: 8px 10px 0 10px
 .footer
     display: flex
     flex-flow: row wrap

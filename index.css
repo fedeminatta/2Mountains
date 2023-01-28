@@ -157,6 +157,7 @@ body {
 }
 
 .sidebar {
+  margin: auto;
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,39 +203,6 @@ body {
 .item:hover:before {
   width: 100%;
   right: 0;
-}
-
-.audio {
-  background: #1877f2;
-  width: auto;
-  min-height: 180px;
-  border-radius: 8px;
-  padding: 25px 25px 10px;
-  margin: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0.9;
-  font-size: 16px;
-}
-.audio:hover {
-  background: #1877f2;
-  opacity: 1;
-}
-.audio h2 {
-  color: #fff;
-  padding-left: 10px;
-  font-family: "roboto", sans-serif;
-  font-size: 2em;
-  padding-bottom: 8px;
-}
-.audio h3 {
-  padding-left: 10px;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 1em;
-}
-.audio audio {
-  margin: 8px 10px 0 10px;
 }
 
 .footer {
